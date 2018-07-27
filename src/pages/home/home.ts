@@ -46,7 +46,7 @@ export class HomePage {
       link = 'geo:0,0?q=' + this.center + '(' + label + ')', '_system';
     }
 
-    this.marker.bindPopup("<p> Informação 1 deste marcador <p><p> Informação 2 deste marcador <p><a style='text-align: center' href=" + link + ">Ir Até Este Ponto</a>");
+    this.marker.bindPopup("<p> Informação 1 deste marcador <p><p> Informação 2 deste marcador <p><a style='text-decoration: none !important;' href=" + link + ">Ir Até Este Ponto</a>");
   }
 
   fabClick(event) {

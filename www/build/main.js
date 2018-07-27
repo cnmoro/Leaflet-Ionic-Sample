@@ -86,7 +86,7 @@ var HomePage = /** @class */ (function () {
             var label = encodeURI('Teste');
             link = 'geo:0,0?q=' + this.center + '(' + label + ')', '_system';
         }
-        this.marker.bindPopup("<p> Informação 1 deste marcador <p><p> Informação 2 deste marcador <p><a style='text-align: center' href=" + link + ">Ir Até Este Ponto</a>");
+        this.marker.bindPopup("<p> Informação 1 deste marcador <p><p> Informação 2 deste marcador <p><a style='text-decoration: none !important;' href=" + link + ">Ir Até Este Ponto</a>");
     };
     HomePage.prototype.fabClick = function (event) {
         this.map.removeLayer(this.marker);
@@ -98,9 +98,10 @@ var HomePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"C:\mapbox-test\mapbox-test\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Leaflet\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div class="map-container">\n    <div id="mapId" style="width: 100%; height: 100%">\n    </div>\n  </div>\n\n  <ion-fab bottom right>\n    <button ion-fab color="secondary" (click)="fabClick($event)">\n      <ion-icon name="locate"></ion-icon>\n    </button>\n  </ion-fab>\n\n  <ion-fab bottom right style="margin-bottom: 64px">\n    <button ion-fab color="secondary" (click)="fabClickDois($event)">\n      <ion-icon name="flag"></ion-icon>\n    </button>\n  </ion-fab>\n</ion-content>'/*ion-inline-end:"C:\mapbox-test\mapbox-test\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */]) === "function" && _b || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
