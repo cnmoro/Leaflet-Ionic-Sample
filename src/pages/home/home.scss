@@ -16,4 +16,8 @@ page-home {
     .leaflet-popup-content-wrapper {
         text-align: center;
     }
+
+    .leaflet-container .leaflet-control-attribution {
+        display: none;
+    }
 }
